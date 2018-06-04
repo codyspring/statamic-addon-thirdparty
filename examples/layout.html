@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ title ensure_right=" / " }}{{ site_name }}</title>
+
+    <link rel="stylesheet" href="{{ theme:css }}">
+
+    {{ third_party:head }}
+  </head>
+  <body>
+    {{ third_party:body position="top" }}
+
+    {{ template_content }}
+
+    {{ theme:js tag="true" cache_bust="true" }}
+    {{ third_party:body }}
+  </body>
+</html>

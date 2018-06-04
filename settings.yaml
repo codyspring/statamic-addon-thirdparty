@@ -1,0 +1,120 @@
+fields:
+  Global:
+    type: section
+    display: Global
+    instructions: Scripts and pixels that should be added to every page.
+  scripts_pixels:
+    type: replicator
+    display: Scripts & Pixels
+    sets:
+      head:
+        display: Head
+        fields:
+          label:
+            type: text
+            display: Label
+            instructions: Useful for remembering what this does.
+            width: 75
+          enabled:
+            type: toggle
+            display: Enabled
+            instructions: Enabled this.
+            width: 25
+            default: true
+          content:
+            type: textarea
+            display: Content
+            instructions: Add your script/pixel here.
+      body:
+        display: Body
+        fields:
+          label:
+            type: text
+            display: Label
+            instructions: Useful for remembering what this does.
+            width: 50
+          position:
+            type: select
+            display: Position
+            instructions: Where does this go?
+            options:
+              bottom: 'End of Body'
+              top: 'Start of Body'
+            width: 25
+            default: bottom
+          enabled:
+            type: toggle
+            display: Enabled
+            instructions: Enabled this.
+            width: 25
+            default: true
+          content:
+            type: textarea
+            display: Content
+            instructions: Add your script/pixel here.
+  Routes:
+    type: section
+    display: Routes
+    instructions: Add scripts and pixels for specific routes.
+  routes:
+    sets:
+      route:
+        display: Route
+        fields:
+          route:
+            type: text
+            instructions: 'Add your route here in the format of /blog, /blog/* or /blog*.'
+            display: Route
+            conditions:
+              style: standard
+              conditions: [ ]
+          scripts_pixels:
+            type: replicator
+            display: Scripts & Pixels
+            sets:
+              head:
+                display: Head
+                fields:
+                  label:
+                    type: text
+                    display: Label
+                    instructions: Useful for remembering what this does.
+                    width: 75
+                  enabled:
+                    type: toggle
+                    display: Enabled
+                    instructions: Enabled this.
+                    width: 25
+                    default: true
+                  content:
+                    type: textarea
+                    display: Content
+                    instructions: Add your script/pixel here.
+              body:
+                display: Body
+                fields:
+                  label:
+                    type: text
+                    display: Label
+                    instructions: Useful for remembering what this does.
+                    width: 50
+                  position:
+                    type: select
+                    display: Position
+                    instructions: Where does this go?
+                    options:
+                      bottom: 'End of Body'
+                      top: 'Start of Body'
+                    width: 25
+                    default: bottom
+                  enabled:
+                    type: toggle
+                    display: Enabled
+                    instructions: Enabled this.
+                    width: 25
+                    default: true
+                  content:
+                    type: textarea
+                    display: Content
+                    instructions: Add your script/pixel here.
+    type: replicator
