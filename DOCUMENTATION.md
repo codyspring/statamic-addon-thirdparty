@@ -20,6 +20,7 @@ Place the whichever tags you want to use in the layout file of your site.
 *Optional:* If you're using the fieldset, you'll need to add that to your layout/templates as well.
 
 ## Tags
+
 - [third_party](#Third_Party)
 - [third_party:head](#Third_Party:Head)
 - [third_party:body](#Third_Party:Body)
@@ -72,6 +73,7 @@ Global scripts/pixels are applied to every route across the site. This is a good
 
 ### Routes
 Route scripts/pixels allow you to specify route patterns to match for tags. Currently, it's a pretty simple formula:
+
 - ``/blog``: Would match *only* the /blog page. This is useful if you're not using the fieldset partial.
 - ``/blog/*``: Would match *children* of the blog page but not the blog root itself.
 - ``/blog*``: Would match *both* the root blog page and it's children.
