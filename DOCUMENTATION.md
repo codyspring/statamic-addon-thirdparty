@@ -1,5 +1,3 @@
-# Third Party Docs
-Manage third party scripts and pixels (tags); like GTM but not.
 
 - [Installing](#Installing)
 - [Usage](#Usage)
