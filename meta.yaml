@@ -1,6 +1,6 @@
 name: ThirdParty
-version: 1.0.1
-description: Manage third party scripts and pixels (tags); like GTM but not.
+version: 1.0.2
+description: Manage third party scripts and pixels (tags); like Google Tag Manager but not.
 url: https://statamic.com/marketplace/addons/third-party/docs
 developer: Cody Spring
 developer_url: https://codyspring.com
