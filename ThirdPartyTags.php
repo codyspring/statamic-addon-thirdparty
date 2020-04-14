@@ -11,7 +11,7 @@ class ThirdPartyTags extends Tags {
    * type, removing elements that are disabled.
    */
   private function getData($type, $position = 'bottom') {
-    $data = $this->api('ThirdParty')->get($this->context['current_uri'], $type);
+    $data = $this->api('ThirdParty')->get(array_get($this->context, 'current_uri'), $type);
 
     $data = array_filter($data, function ($item) {
       if (array_key_exists('enabled', $item)) {
